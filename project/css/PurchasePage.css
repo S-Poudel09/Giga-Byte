@@ -1,0 +1,148 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "arial";
+}
+.nav{
+	background-color: #FFF;
+	height: 10vh;
+	display: grid;
+	grid-template-columns: repeat(2, 40%);
+	position: relative;
+	overflow: hidden;
+}
+.rtn-btn{
+	padding: 0px 30px;
+}
+.rtn-btn a{
+	text-decoration: none;
+	color: black;
+	padding: 30px 40px;
+	border: 1px solid transparent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bold;
+}
+.rtn-btn a:hover{
+	transition: all 0.2s linear;
+	background-color: #C3C3C9;
+	border-radius: 2px;
+}
+
+
+
+.Container{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	/*box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;*/
+}
+.row{
+	position: relative;
+	padding: 0px 130px;
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+.image{
+	padding: 5% 0px;
+	display: grid;
+}
+.images{
+	width: 400px;
+	height: 225px;
+	overflow: hidden;
+}
+.image .images img{
+	width: 400px;
+}
+.image .images img:hover{
+	transition: all 0.5s ease-out;
+	cursor: zoom-in;
+	transform: scale(1.3);
+}
+.details{
+	padding: 5% 0px;
+}
+.details .title{
+	float: left;
+}
+.details .title h2{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.details .title ul li{
+	list-style: none;
+}
+.proceed{
+	padding: 30px 0px;
+}
+.proceed div ,.title ul li strong{
+	padding: 10px 0px;
+}
+.proceed .num{
+	padding: 7px 3px;
+	border-radius: 0;
+	border: 1px solid black;
+}
+.proceed .Cnum , .proceed .address{
+	padding: 7px 3px;
+	border-radius: 0;
+	border: 1px solid black;
+	width: 200px;
+}
+.proceed .col{
+	width: 25px;
+	height: 25px;
+	border: none;
+}
+
+.buyBtn{
+	padding: 10px 50px;
+	border-radius: 0;
+	color: white;
+	border: 2px solid transparent;
+	background-color: rgb(20,20,20);	
+}
+
+.buyBtn:hover{
+	transition: all 0.2s linear;
+	cursor: pointer;
+	box-shadow: rgba(50, 50, 50,0.3) 0px 20px 10px -3px;
+}
+
+.purchase-section{
+	/*display: none;*/
+	padding: 20px;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	background-color: #56CD6C;
+	border-radius: 10px;
+	transition: all 0.4s ease;
+}
+.purchase-section.active{
+	transform: translateX(-50%) scale(1);
+}
+.purchase-section .title {
+	text-align: center;
+	padding: 30px;
+}
+.okbtn{
+	text-align: center;
+}
+.okbtn button{
+	border-radius: 5px;
+	background-color: #AD081B;
+	color: white;
+	padding: 15px 50px;
+	border: none;
+	width: 80%;
+	margin: 5px 0px;
+}
+.okbtn button:hover{
+	background-color: #8e0513;
+	cursor: pointer;
+}

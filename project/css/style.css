@@ -1,0 +1,378 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Raleway;
+	color: black;
+	text-decoration: none;
+	list-style: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-----------NAV BAR STYLING----------*/
+.nav-bar{
+	background-color: rgba(255, 255, 255 , 1);
+	height: 70px;
+	position: relative;
+	z-index: 10;
+	/*position: fixed;*/
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.nav-bar:hover{
+	transition: all 0.4s ease-out;
+	background-color: rgba(255, 255, 255 , 1);	
+}
+.nav-conatiner{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+.web-logo{
+	position: absolute;
+	top: 60%;
+	transform: translateY(-60%);
+}
+.web-logo img{
+	height: 40px;
+}
+.nav-links{
+	position: absolute;
+	top:50% ;
+	transform: translateY(-60%);
+	right: 2%;
+}
+.nav-link{
+	display: inline;
+}
+.nav-link a{
+	border: 1px solid transparent;
+	padding: 10px 20px;
+	transition: border 0.2s linear;
+}
+.nav-link a:hover{
+	border: 1px solid black;
+}
+#sign-up-icon{
+	margin: 3px 10px;
+	display: inline;
+	padding: 5px 0vh;
+}
+.material-icons{
+	transform: translateY(30%);
+}
+/*-----------NAV BAR STYLING END----------
+
+
+/*..........sign up section.............*/
+.signup{
+	display: none;   				/*default to none*/
+	background-color: white;
+	position: fixed;
+	top: 70px;
+	right: 0px;
+	z-index: 4;
+}
+.hasSigned{
+	display: none;
+	background-color: white;
+	position: fixed;
+	top: 70px;
+	right: 0px;
+	z-index: 4;
+}
+.form1{
+	height: 300px;
+	width: 250px;
+	padding: 10px 20px;
+	display: grid;
+	grid-gap: 10px;
+	align-content: space-around;
+}
+.form2{
+	height: 120px;
+	width: 250px;
+	padding: 20px;
+	display: grid;
+	grid-gap: 10px;
+	align-content: space-around;
+}
+.input-field{
+	padding: 4px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid black;
+}
+.submit-btn{
+	text-align: center;
+	font-size: 14px;
+	padding: 20px 0px;
+	border: none;
+	color: white;
+	background-color: black;
+}
+.submit-btn:hover ,.close-btn:hover{
+	cursor: pointer;
+}
+.close-btn{
+	padding: 10px 0px;
+	text-align: center;
+	border: 1px solid black;
+}
+/*..........sign up section end.............*/
+
+
+
+/**************intro page********************/
+#slider{
+	overflow: hidden;
+	position: relative;
+}
+#slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	height: 100vh;
+}
+#slider figure img{
+	width:20%;
+}
+.arrow{
+	position: absolute;
+ 	top: 50%;
+ 	right: 1%;
+ 	transform: translate(-50%, -50%);	
+}
+.arrow h2 button{
+	padding:5px 10px;
+	font-size: 20px;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 50%;
+}
+.arrow h2 button:hover{
+	transition: background-color 0.2s linear;
+	background-color: white(100, 100, 100);
+	cursor: pointer;
+}
+.learn-more{
+	position: absolute;
+ 	top: 67%;
+ 	left: 14%;
+ 	transform: translate(-50%, -50%);
+}
+.learn-more a{
+	background-color: #007AEF;
+	border-radius: 30px;
+	padding: 15px 30px;
+	color: white;
+}
+.learn-more a:hover{
+	background-color: rgb(0, 70, 150);
+}
+/*...........intro page end..............*/
+
+
+
+/*.............banner section............*/
+.promoImg{
+	background-image: url(../media/banner.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+.morepromoImg{
+	background-color: #EEEEEE;
+}
+.morepromoImg h2 , .pics h3{
+	color: black;
+	padding: 30px 0px;
+	text-align: center;
+}
+.pics{
+	padding: 20px 0px;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	justify-content: space-around;
+}
+.pics div img{
+	width: 300px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.pics div img:hover{
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*..............banner section end.............*/
+
+
+
+/* .........."our products" section.............*/
+.products{
+	background-color: white;
+}
+.container{
+	margin: 0px 80px;
+}
+.products-title{
+	padding: 40px;
+	text-align: center;
+}
+.products-title h1{
+	font-size: 50px;
+}
+.row{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-gap: 10px;
+}
+.product{
+	padding: 30px;
+	text-align: center;
+}
+.product:hover{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	cursor: all-scroll;
+}
+.product-img img{
+	width: 396px;
+	height: 216px;
+}
+.product-details{
+	padding: 20px;
+}
+.Buy-btn{
+	margin-top: 30px;
+}
+.Buy-btn a{
+	border-radius: 30px;
+	padding: 20px 40px;
+	background-color: black;
+	color: white;
+}
+.Buy-btn a:hover{
+	transition: all 0.3s linear;
+	background-color: rgb(100, 100, 100);
+}
+/*................our products section end................*/
+
+
+/******************footer and links***********************/
+#footer-row{
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	justify-content: space-around;
+	padding: 30px 5px;
+}
+.footer-col ul li a{
+	color: black;
+}
+.footer-col ul li a:hover{
+	text-decoration: underline;
+}
+.footer-col ul li{
+	padding: 6px;
+}
+.F-title h2 ,.AboutUsP{
+	padding-bottom: 20px ;
+	color: black;
+}
+.Fform {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	padding: 0px;
+	margin: 0px;
+}
+.Fform input{
+	height: 40px;
+	outline: none;
+}
+.Fbtn{
+	background-color: #AD081B;
+	border: none;
+	color: white;
+	font-size: 25px;
+	padding: 0px 10px;
+}
+/******************footer and links end***********************/
+
+
+/********************cookie section************************/
+.cookieT{
+	border: 2px solid #ABD3AB;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	background-color: #F7F7F7;
+	opacity: 50%;
+	padding: 10px 30px;
+	width: 30vw;
+	text-align: center;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+}
+.cookieT:hover{
+	transition: opacity 0.2s ease-in;
+	opacity: 100%;
+}
+.cookieT div{
+	margin: 20px 0;
+}
+.cookieT div h2{
+	margin: 20px 0;
+}
+.accept-btn{
+	color: white;
+	background-color:#68B868 ;
+	border-radius: 50px;
+	padding: 20px 30px;
+	border: none;
+	cursor: pointer;
+}
+.accept-btn:hover{
+	background-color: rgb(70, 150, 70) ;
+}
+/********************cookie section end*************************/
+
+
+
+/*---------------email received notiication------------*/
+.received{
+	display: grid;
+	grid-template-columns: 4% 90% 6%;
+	border-radius: 5px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #EEE;
+	z-index: 11;
+	transform: translateX(100%);
+	transition: transform 0.5s ease-out;
+}
+.received .clr{
+	background-color: #45BF6A;
+}
+.received .text{
+	padding: 15px 10px;
+}
+.received .cross{
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+}
+.received .cross button{
+	border: none;
+	outline: none;
+	font-size: 25px;
+	background-color: transparent;
+}
+.received .cross button:hover{
+ 	cursor: pointer;
+}

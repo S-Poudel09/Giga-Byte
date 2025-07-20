@@ -1,0 +1,272 @@
+<!DOCTYPE html>                             
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GigaByte</title>
+	<link rel="stylesheet" type="text/css" href="../project/css/style.css">
+	<script src="../project/js/script.js"></script>
+	
+     
+	 <style>
+		.LogIn {
+			font-weight: bold;
+			border-radius: 7px;
+			padding: 5px 5px 5px 5px;
+			background-color: #EEEEEE;
+		}
+	 </style>
+
+</head>
+<body style="background-color: #EEEEEE;">
+
+	<!------------- navigation bar --------------->
+	<nav class="nav-bar">
+		<div class="nav-conatiner">
+			<div class="web-logo">
+				<a href="#"><img src="../project/media/logo.png"></a>
+			</div>
+			<div class="nav-links">
+				<ul class="nav-lists"> 
+					<li class="nav-link"><a href="../project/html/blog.html" target="_blank">Blog</a></li>
+					<li class="nav-link"><a href="#footer-row">Contact</a></li>
+					<li class="nav-link"><a href="../project/html/Product.html">Products</a></li>
+					<li class="nav-link"> <a href="../project/html/Research.html">Research</a></li>
+					<li class="nav-link"> <a href="../project/html/about Us.html">About Us</a></li>
+				    
+
+					<li id="sign-up-icon"><a href="#" onclick="openmenu();"><button class="LogIn">Log In</button></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!------------- navigation bar ends ------------>
+
+
+	<!----------- signup section ------->
+	<section class="signup"> 
+		<form class="form1">
+			<input class="input-field" id="Fname" type="text" placeholder="First Name" required>
+			<input class="input-field" id="Lname" type="text" placeholder="Last Name" required>
+			<input class="input-field" id="Femail" type="email" placeholder="example12@gmail.com" required>
+			<input class="input-field" id="Fpass" type="password" placeholder="Password" required>
+			<button class="submit-btn" id="Fsub" type="submit" onclick="signup();">Sign in</button>
+			<input class="close-btn" value="Close" onclick="toggle();">
+		</form>
+	</section>
+	<section class="hasSigned"> 
+		<form class="form2">
+			<h4 class="hasSignText">noone has signed in</h4>
+			<div><a href="#" onclick="resetInfo();" style="color:red;">Delete account</a></div>
+			<input class="close-btn" value="Close" onclick="openmenu();">
+		</form>
+	</section>
+	
+
+	<!----------- intro - page --------->
+	<div id="slider">
+		<figure>
+			<img src="../project/media/viber.jpg" id="wallpaper">
+		</figure>
+		<div class="arrow">
+			<h2><button onclick="changeImg();">⇋</button></h2>
+		</div>
+		<div class="learn-more">
+			<a href="../html/Product.html">Learn more</a>
+		</div>
+	</div>
+	<!----------- intro - page end --------------->
+
+
+	<!--------------- promotions images---------------->
+	<div class="promoImg">
+
+	</div>
+	<div class="morepromoImg">
+		<h2>Best Sellers </h2>
+		<div class="pics">
+			<div>
+				<img src="../project/media/pixma_g3010_02.webp">
+				<h3>Reliable and easy to set up </h3>
+			</div>
+			<div>
+				<img src="../project/media/laserprinter.jpg">
+				<h3>Print more than 50 pages in one minutes </h3>
+			</div>
+			<div>
+				<img src="../project/media/epson LQ-590 impact printer.jpg">
+				<h3>Superior Quality Ribbons</h3>
+			</div>
+		</div>
+	</div>
+	<!--------------- promotions images---------------->
+
+
+	<!--------------- our products section ------------>
+	<div class="products" id="products">
+		<div class="container">
+			<div class="products-title">
+				<h1>Our Products</h1>
+			</div>
+			<div class="row">
+				<div class="product" id="product1">
+					<div class="product-img">
+						<img src="../project/media/pixma_g3010_02.webp">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>Canon Inkjet Printer</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="../html/Purchasecanon.html" target="_blank">Learn more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="product" id="product2">
+					<div class="product-img">
+						<img src="../project/media/laserprinter.jpg">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>Hp Laser Printer</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="../html/Purchasehpprinter.html" target="_blank">Learn more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="product" id="product3">
+					<div class="product-img">
+						<img src="../project/media/epson LQ-310.png ">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>Epson Dot Matrix Printer</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="../html/Purchaseepsonprinter.html" target="_blank">Learn more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="product" id="product4">
+					<div class="product-img">
+						<img src="../project/media/epson LQ-590 impact printer.jpg ">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>Epson Impact Printer</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="../html/Purchaseepsonnprinter.html" target="_blank">Learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="product" id="product3">
+					<div class="product-img">
+						<img src="../project/media/multi-function 2.jpg ">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>Brother Multi Function printer</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="../html/purchasebrotherprinter.html" target="_blank">Learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="product" id="product3">
+					<div class="product-img">
+						<img src="../project/media/xerox-colorqube-8570-open.jpg">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>Xerox Solid Ink Printer</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="../html/Purchasexeroxprinter.html" target="_blank">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!------------------------------ our products section ----------------------------->
+
+
+
+	<!--------------------------------- footer section ------------------------------->
+	<footer>
+		<div id="footer-row">
+
+			<div class="footer-col">
+				<div class="F-title">
+					<h2>About us</h2>
+				</div>
+				<div class="AboutUsP">
+					GigaByte constantly reinvents the future
+					<br> We help costumer to shop printers hassle free  <br>to help people all over the world lead happier.
+				</div> 
+			</div>
+
+			<div class="footer-col">
+				<div class="F-title">
+					<h2>Contact</h2>
+				</div>
+				<ul>
+					<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+					<li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+					<li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+					<li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+				</ul>
+			</div>
+
+			
+			
+			<div class="footer-col">
+				<div class="F-title">
+					<h2>Receive Updates</h2>
+				</div>
+				<div class="Receive">
+					<div class="Fform">
+						<input type="email" required placeholder="example12@gmail.com">
+						<button class="Fbtn" onclick="open_received_msg();">&#x2709;</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer section end-->
+
+	<!-- cookie text -->
+	<div class="cookieT">
+		<div>
+			<h2>This website uses cookies</h2>
+			<h4>This website uses cookies to improve your experience.</h4>
+		</div>
+		<button class="accept-btn" onclick="hide_cookie_section();">Accept all</button>
+	</div>
+	<!-- cookie text end-->
+
+
+	
+	<div class="received">
+		<div class="clr">
+			
+		</div>
+		<div class="text">
+			<h3>You will receive all updates</h3>
+		</div>
+		<div class="cross">
+			<button onclick="close_received_msg();">&#x2716;</button>
+		</div>
+	</div>
+
+
+	<!-- copyright thing -->
+	<div>
+		<h4>© 2024 GigaByte | All Right Reserved</h4>
+	</div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="../css/PurchasePage.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  
+
+  <script src="../js/script.js"></script>
+
+</head>
+<body>	
+	<div class="nav">
+		<div class="rtn-btn">
+			<a href="../index.html">↩ Home</a>
+		</div>
+	</div>
+    
+ 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "arial";
+      margin: 0;
+    }
+
+    nav {
+
+
+
+      
+      /* position: fixed; */
+      top: 0;
+      height: 80px;
+      background: coral;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0 12vw;
+      justify-content: space-between;
+      z-index: 99;
+    }
+
+    .nav-items {
+      display: flex;
+    }
+
+    .nav-item {
+      padding: 4px 12px;
+      transition: 0.3s;
+    }
+
+    .nav-item:hover {
+      background: rgb(0, 0, 0, 0.12);
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* body {
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    } */
+    .logo {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+    .content-area {
+      padding: 0 12vw;
+      
+    }
+
+    .title {
+      padding: 10px;
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: center;
+    }
+    .about-container{
+      height: 10vh;
+    }
+    .text {
+      text-align: justify;
+      display: flex;
+      align-items: center;
+      /* flex-direction: column; */
+    }
+    .image-area {
+      margin-right: 1vw;
+      height: 10vh;
+	  border-radius: 10px;
+    }
+    p{
+      text-align: justify
+    }
+  </style>
+
+  <body>
+	<nav class="nav-bar">
+		<div class="nav-conatiner">
+			<div class="web-logo">
+				<a href="#"><img src="../media/logo.png"></a>
+			</div>
+			<div class="nav-links">
+				<ul class="nav-lists"> 
+					<li class="nav-link"><a href="blog.html" target="_blank">Blog</a></li>
+					<li class="nav-link"><a href="#footer-row">Contact</a></li>
+					<li class="nav-link"><a href="Product.html">Products</a></li>
+					<li class="nav-link"> <a href="research.html">Research</a></li>
+					<li class="nav-link"> <a href="about Us.html">About us</a></li>
+				    
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <div class="hero">
+      <div class="title">Team Members</div>
+    </div>
+    <table width="100%" >
+      <tr>
+          <th>Puspanjali Adhikari</th>
+          <th>Princess Poudel </th>
+      </tr>
+  <br>
+  <br>
+  
+      <tr>
+  
+         <td>  <img src="../media/51C8D646-D4F2-4A47-AE96-7547104A006E.jpg " height=450px; width=650px;></a> </td>
+         <td> <img src="../media/IMG_0537.jpg" height=450px; width=650px;>
+  
+          </table>
+  
+      </tr>
+  
+      
+  <table width =" 100%">
+      <tr>
+       
+        <br>
+        <br>
+          <td> Sumiran Jung Bohora <img src="../media/E7A33FAB-2004-4488-B2C4-095EAC019888.jpg" height=450px; width=650px;></a></td>
+          <td>  Aadim Busubung Rai <img src="../media/IMG_0533.jpg" height=450px; width=650px;>
+   
+       </tr>
+       </table>
+       
+  
+
+    <form id="contactForm" onsubmit="validateForm()">
+      <h2>Customer Feedback Form</h2>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="address">Your Address:</label>
+      <input type="text" id="address" name="address" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="feedback">Your Feedback</label>
+      <textarea name="feedback" id="feedback" cols="70" rows="10"></textarea>
+
+      <button type="submit">Submit</button>
+    </form> 
+    <script src="script.js"></script>
+    <footer>
+      <div id="footer-row">
+  
+        <div class="footer-col">
+          <div class="F-title">
+            <h2>About us</h2>
+          </div>
+          <div class="AboutUsP">
+            GigaByte constantly reinvents the future
+            <br> We help costumer to shop printers hassle free  <br>to help people all over the world lead happier.
+          </div> 
+        </div>
+  
+        <div class="footer-col">
+          <div class="F-title">
+            <h2>Contact</h2>
+          </div>
+          <ul>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+  
+        
+        
+        <div class="footer-col">
+          <div class="F-title">
+            <h2>Receive Updates</h2>
+          </div>
+          <div class="Receive">
+            <div class="Fform">
+              <input type="email" required placeholder="example12@gmail.com">
+              <button class="Fbtn" onclick="open_received_msg();">&#x2709;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+  </body>
+</html>
